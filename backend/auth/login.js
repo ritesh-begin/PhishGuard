@@ -1,6 +1,6 @@
-import dbConnect from '../_lib/mongodb.js';
-import { AdminUser } from '../_lib/models.js';
-import { signToken } from '../_lib/auth.js';
+import dbConnect from '../lib/mongodb.js';
+import { AdminUser } from '../lib/models.js';
+import { signToken } from '../lib/auth.js';
 import bcrypt from 'bcryptjs';
 
 export default async function handler(req, res) {

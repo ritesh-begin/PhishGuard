@@ -1,6 +1,6 @@
-import dbConnect from '../_lib/mongodb.js';
-import { Subscriber } from '../_lib/models.js';
-import { requireAdmin } from '../_lib/auth.js';
+import dbConnect from '../lib/mongodb.js';
+import { Subscriber } from '../lib/models.js';
+import { requireAdmin } from '../lib/auth.js';
 
 export default async function handler(req, res) {
   const authError = requireAdmin(req, res, null);

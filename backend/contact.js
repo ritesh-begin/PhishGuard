@@ -1,5 +1,5 @@
-import dbConnect from './_lib/mongodb.js';
-import { Contact } from './_lib/models.js';
+import dbConnect from './lib/mongodb.js';
+import { Contact } from './lib/models.js';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method Not Allowed' });

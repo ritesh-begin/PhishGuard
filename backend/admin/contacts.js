@@ -1,6 +1,6 @@
-import dbConnect from '../_lib/mongodb.js';
-import { Contact } from '../_lib/models.js';
-import { requireAdmin } from '../_lib/auth.js';
+import dbConnect from '../lib/mongodb.js';
+import { Contact } from '../lib/models.js';
+import { requireAdmin } from '../lib/auth.js';
 
 export default async function handler(req, res) {
   // Check auth first

@@ -1,6 +1,6 @@
-import dbConnect from './_lib/mongodb.js';
-import { Scan } from './_lib/models.js';
-import { analyzeUrl } from './_lib/phishingEngine.js';
+import dbConnect from './lib/mongodb.js';
+import { Scan } from './lib/models.js';
+import { analyzeUrl } from './lib/phishingEngine.js';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {

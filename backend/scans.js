@@ -1,5 +1,5 @@
-import dbConnect from './_lib/mongodb.js';
-import { Scan } from './_lib/models.js';
+import dbConnect from './lib/mongodb.js';
+import { Scan } from './lib/models.js';
 
 export default async function handler(req, res) {
   if (req.method !== 'GET') {
